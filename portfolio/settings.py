@@ -83,14 +83,27 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 # PostgreSQL Database
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'portfoliodb',
+#         'USER': 'django',
+#         'PASSWORD': 'django1234',
+#         'HOST': 'localhost',
+#         'PORT': '5433',
+#     }
+# }
+
+# MySQL Database
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfoliodb',
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'portfolio_db',
         'USER': 'django',
         'PASSWORD': 'django1234',
         'HOST': 'localhost',
-        'PORT': '5433',
+        'PORT': '3306',
     }
 }
 
@@ -119,7 +132,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
