@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -24,9 +25,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link active" href="{% url 'home' %}">Home</a>
       <a class="nav-item nav-link" href="#">Twitter</a>
-      <a class="nav-item nav-link" href="#">Resume</a>
-      <a class="nav-item nav-link" href="#">Blog</a>
+      <a class="nav-item nav-link" href="{% static 'resume.pdf' %} ">Resume</a>
+      <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
     </div>
   </div>
 </nav>
@@ -34,14 +36,15 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
+      <section class="jumbotron text-center pb-5">
         <div class="container">
           <h1 class="jumbotron-heading">Web Developer - Django!</h1>
-          <p class="lead text-muted">Hey, my name is Robert Mwanzia and I love to make Django websites. It's the thrill of handling the requests that the people want!</p>
+          <p class="lead text-muted">My name is Robert Mwanzia and I love to make Django websites. It's the thrill of handling the requests that the people want!</p>
           <p>
             <a href="mailto:rmwanzia@gmail.com" class="btn btn-primary my-2">Email Me</a>
 <!--             <a href="#" class="btn btn-secondary my-2">Read my Blog</a> -->
           </p>
+          <img style="height: 230px; width: auto;" src="{% static 'pcap.png' %}">
         </div>
       </section>
 
@@ -69,7 +72,8 @@
 
     <footer class="text-muted">
       <div class="container text-center">
-        <p>© Robert M {% now "Y" %} </p>
+        <br>
+        <p>Powered by Django! © {% now "Y" %} </p>
       </div>
     </footer>
 
