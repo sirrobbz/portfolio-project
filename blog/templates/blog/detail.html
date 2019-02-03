@@ -44,16 +44,29 @@
 
 <div class="album py-5 bg-light" style="margin-left: 60px; margin-right: 60px">
         <div class="container">
-                <img class="card-img-top img-fluid" style="width: 840px; height: auto;" src="{{ blog.image.url }}" />
+                <img class="card-img-top img-fluid" style="width: 640px; height: auto;" src="{{ blog.image.url }}" />
                 <div class="card-body">
                   <div>
                   <h1 class="card-text">{{ blog.title }}</h1>
                   </div>
                   <p class="card-text">{{ blog.pubdate }}</p>
-                  <p class="card-text" style="width: 840px; height: auto; text-align: justify;">{{ blog.body }}</p>
+                  <p class="card-text" style="width: auto; height: auto; text-align: justify;">{{ blog.body }}</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+
+    <footer class="text-muted">
+      <div class="container text-center">
+        <br>
+        <p>Powered by Django! © {% now "Y" %} </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
