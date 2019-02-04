@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$qg&t8%1f7f!n5tbth9n*ibdjuf!m(zpy$2y$agm@rq&*cr82%'
+SECRET_KEY = '$qg&t8%1f7f!n5tbananath9n*ibdjuf!mango(zpy$2y$agm@rq&*cr82%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '206.189.20.110']
 
 
 # Application definition
@@ -102,12 +102,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'portfolio_db',
         'USER': 'django',
-        'PASSWORD': 'django1234',
+        'PASSWORD': 'b-*P,+nq8Y$6u)8n',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -158,8 +157,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 # print(os.path.join(BASE_DIR, 'portfolio/static/'))
-
-try:
-    from .local_settings import *
-except ImportError:
-    pass
