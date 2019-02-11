@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$qg&t8%1f7f!n5tbananath9n*ibdjuf!mango(zpy$2y$agm@rq&*cr82%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '206.189.20.110']
+ALLOWED_HOSTS = ['localhost', '206.189.20.110', 'rmwanzia.com', 'www.rmwanzia.com']
 
 
 # Application definition
@@ -156,4 +156,4 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# print(os.path.join(BASE_DIR, 'portfolio/static/'))
+print(os.path.join(BASE_DIR, 'media'))
